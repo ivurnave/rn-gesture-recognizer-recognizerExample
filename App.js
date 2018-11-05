@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, SafeAreaView} from 'react-native';
-import {Trainer} from 'rn-gesture-recognizer';
+import {Recognizer} from 'rn-gesture-recognizer';
 
-export default class App extends Component {
+let json = require('./gestureClasses.json');
+
+
+export default class RecognizerApp extends Component {
   render() {
+    console.log(json);
     return (
       <SafeAreaView style={styles.container}>
-        <Text>Testing the rn-gesture-recognizer Trainer Component!</Text>
-        <Trainer
+        <Text>Draw gestures to be recognized below!</Text>
+        <Recognizer
           color={'#ff0000'}
           strokeWidth={4}
-          path={'/Users/evan/Documents/capstone/trainerTest'}
         />
       </SafeAreaView>
     );
