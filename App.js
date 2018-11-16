@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, SafeAreaView} from 'react-native';
 import {Recognizer} from 'rn-gesture-recognizer';
 
-let gestureClasses = require('./gestureClasses.json');
+// let gestureClasses = require('./gestureClasses.json');
+let gestureClasses = require('./suujiGestures.json');
 
 export default class RecognizerApp extends Component {
   constructor(props) {
